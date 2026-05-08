@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD131 | Fabian Reyes</title>
-    <meta description="WDD131 Dynamic Web Fundamentals, Fabian Reyes. An about me webpage">
-    <meta author="Fabian Reyes">
+    <meta name="description" content="WDD131 Dynamic Web Fundamentals, Fabian Reyes. An about me webpage">
+    <meta name="author" content="Fabian Reyes">
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="title">WDD 131 - Dynamic Web Fundamentals - Fabian Reyes</div>
+        <div class="title">
+            WDD 131 - Dynamic Web Fundamentals -
+            <span>Fabian Reyes</span>
+        </div>
         <nav>
             <ul>
                 <li><a href="#">LinkedIn</a></li>
@@ -21,28 +25,44 @@
         </nav>
     </header>
     <main>
-        <h1>Fabian Reyes</h1>
-        <section class="card"></section>
+        <h1>Fabian A. Reyes</h1>
+        <section class="card">
             <h2>About me</h2>
-            <p>My name is Fabian, I was born in Chile and live with my family in Antofagasta since I was born. I'm the oldest of three, and I'm 21 years old. I love to play piano, I love to code, and I love to learn new things</p>
-            <img src="images/Me600800.webp" alt="My profile photo" width="160">
+
+            <div class="row">
+                <p>My name is Fabian, I was born in Chile and live with my family in Antofagasta since I was born. I'm the oldest of three, and I'm 21 years old. I love to play piano, I love to code, and I love to learn new things</p>
+                <img src="images/Me6008003.webp" alt="My profile photo" width="160">
+            </div>
+
             <h3>Antofagasta, Chile</h3>
-            <p>Chile is the longest and narrowest country in the world, stretching over 4,300 km. It is known for the Atacama Desert,
-            Patagonia, its 2,000+ volcanoes, leadership in astronomy, and being a tricontinental country (America, Oceania, and
-            Antarctica).</p>
-            <img src="images/chileflag.webp" alt="Chile flag" width="160">
-        <section class="card"></section>
+
+            <div class="row">
+                <figure>
+                    <img src="images/chileflag.webp" alt="Chile flag" width="160">
+                    <figcaption>Official Flag of Chile</figcaption>
+                </figure>
+
+                <p>Chile is the longest and narrowest country in the world, stretching over 4,300 km. It is known for the Atacama Desert,
+                Patagonia, its 2,000+ volcanoes, leadership in astronomy, and being a tricontinental country (America, Oceania, and
+                Antarctica).</p>
+            </div>
+
+        </section>
+        <section class="card">
             <h2>Web Dev Resources</h2>
-            <ul>
-                <li><a href="https://www.w3schools.com">W3Schools</a></li>
-                <li><a href="https://css-tricks.com">CSS Tricks</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
-                <li><a href="https://codepen.io">CodePen</a></li>
-            </ul>
+            <div class="resources">
+                <ul>
+                    <li><a href="https://www.w3schools.com">W3Schools</a></li>
+                    <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                    <li><a href="https://codepen.io">CodePen</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
     <footer>
         <p>©<span id="currentyear"></span> 🌵 Fabian Reyes 🌵 Chile</p>
-        <p id="lastModified"></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
