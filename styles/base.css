@@ -27,6 +27,11 @@ header div {
 nav {
     background: rgb(37, 37, 37);
     margin: 0 auto;
+    color: white;
+}
+
+nav * {
+    color: white;
 }
 
 nav ul {
@@ -36,16 +41,6 @@ nav ul {
 
 nav li {
     flex: 1 0 auto;
-}
-
-nav,
-nav ul,
-nav li,
-nav a,
-nav a:visited,
-nav a:hover,
-nav a:focus {
-    color: white;
 }
 
 nav a {
