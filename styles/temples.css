@@ -7,7 +7,7 @@
 header {
     background-color: rgb(29, 29, 100);
     font-size: 20px;
-    display: grid;
+    display: block;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 15px rgb(29, 29, 100);
@@ -19,10 +19,9 @@ header {
     font-size: larger;
 }
 
+
 nav {
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 15px;
+    background-color: transparent;
 }
 
 nav ul {
@@ -31,25 +30,81 @@ nav ul {
     flex-direction: column;
 }
 
-nav a {
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    padding: 1rem;
-    color: black;
+.navigation {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    background-color: rgb(29, 29, 100);
 }
 
-nav li :hover {
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+
+.open a {
+    display: block;
+}
+
+.navigation a:hover {
     background-color: #598bb9;
     text-decoration: underline;
     color: white;
 }
 
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
 h1 {
+    grid-column: 1 / -1;
     margin: 30px;
     padding: 20px;
     text-align: center;
 }
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figure {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
 
 footer {
     background-color: rgb(29, 29, 100);
