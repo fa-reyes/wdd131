@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+    .hero-container {
+        position: relative;
+        display: block;
+        overflow: hidden;
+    }
+
+    .card {
+        position: absolute;
+        background-color: var(--bg-overlay);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        text-align: left;
+        max-width: 320px;
+        padding: 1rem;
+    }
+
+    .card h2 {
+        background-color: var(--secondary-color);
+        color: var(--white);
+        padding: 0.4rem 0.8rem;
+        font-size: 1.4rem;
+        margin: -1rem -1rem 1rem -1rem;
+    }
+
+    .data-card {
+        top: 20px;
+        left: 20px;
+    }
+
+    .weather-card {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather-heading::after {
+        content: " ⛅";
+        font-size: 1.2rem;
+        vertical-align: middle;
+        margin-left: 0.5rem;
+    }
+}

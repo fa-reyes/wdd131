@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Country | Fabian Reyes</title>
+    <meta name="author" content="Fabian Reyes">
+    <meta name="description" content="WDD131. Country Place. Fabian Reyes. Learn more about the country where I live">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Chile</h1>
+    </header>
+    
+    <main class="hero-container">
+        <picture class="hero-image">
+            <source srcset="images/hero-cueca-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero-cueca-medium.webp" media="(min-width: 530px)">
+            <img src="images/hero-cueca-small.webp" alt="Chilean dance called cueca">
+        </picture>
+    
+        <section class="card data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 756,102 sq km</li>
+                <li><strong>Population:</strong> 18,480,432</li>
+                <li><strong>Capital:</strong> Santiago</li>
+                <li><strong>Languages:</strong> Español</li>
+                <li><strong>Currency:</strong> Peso chileno</li>
+                <li><strong>Time Zone:</strong> UTC-4</li>
+                <li><strong>Calling Code:</strong> +56 9</li>
+                <li><strong>Internet TLD:</strong> .cl</li>
+            </ul>
+        </section>
+    
+        <section class="card weather-card">
+            <h2 class="weather-heading">Weather</h2>
+    
+            <div class="weather-icon-mobile">
+                <img src="images/weather-icon.svg" alt="Weather condition icon">
+            </div>
+    
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temperature">10</span>°C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> <span id="wind-speed">5</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p><span id="currentYear"></span> 🌵 Fabian 🌵 Chile</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
