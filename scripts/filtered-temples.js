@@ -95,10 +95,12 @@ const temples = [
     },
 ];
 
-createTempleCards();
-
-function createTempleCards() {
-    temples.forEach(temple => {
+function createTempleCards(filteredTemples) {
+    const grid = document.querySelector(".res-grid");
+    
+    grid.innerHTML = "";
+    
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
@@ -125,3 +127,52 @@ function createTempleCards() {
         document.querySelector(".res-grid").appendChild(card);
     })
 }
+    
+createTempleCards(temples);
+    
+const homeLink = document.querySelector("#allTemples");
+const oldLink = document.querySelector("#oldTemples");
+const newLink = document.querySelector("#newTemples");
+const largeLink = document.querySelector("#largeTemples");
+const smallLink = document.querySelector("#smallTemples");
+const heading = document.querySelector("main h1");
+
+homeLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    heading.textContent = "Home";
+    createTempleCards(temples);
+});
+
+oldLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    heading.textContent = "Old Temples";
+    const oldTemples = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0]);
+        return year < 1900;
+    });
+    createTempleCards(oldTemples);
+});
+
+newLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    heading.textContent = "New Temples";
+    const newTemples = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0]);
+        return year > 2000;
+    });
+    createTempleCards(newTemples);
+});
+
+largeLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    heading.textContent = "Large Temples";
+    const largeTemples = temples.filter(temple => temple.area > 90000);
+    createTempleCards(largeTemples);
+});
+
+smallLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    heading.textContent = "Small Temples";
+    const smallTemples = temples.filter(temple => temple.area < 10000);
+    createTempleCards(smallTemples);
+});
