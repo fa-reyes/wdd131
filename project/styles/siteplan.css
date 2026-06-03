@@ -62,6 +62,12 @@ section h2 {
     padding-bottom: 0.5rem;
 }
 
+section h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
 section p {
     margin-bottom: 1rem;
     font-size: 1rem;
@@ -90,4 +96,15 @@ ul li::before {
 
 strong {
     color: var(--primary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border: 2px dashed #ccc;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: #fff;
 }
