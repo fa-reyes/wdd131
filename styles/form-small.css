@@ -1,0 +1,123 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header,
+footer {
+    text-align: left;
+    padding: 1rem;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.review-form {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    max-width: 600px;
+}
+
+legend {
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+
+label,
+.review-form div {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.required {
+    color: #e74c3c;
+    margin-left: 3px;
+}
+
+.optional {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+    resize: none;
+}
+
+fieldset label:has(input[type="radio"]),
+fieldset label:has(input[type="checkbox"]) {
+    align-items: center;
+    gap: 8px;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 8px 5px 0 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+fieldset label:has(input[type="radio"]) {
+    display: inline-flex;
+}
+
+fieldset label:has(input[type="checkbox"]) {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #219150;
+}
