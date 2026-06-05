@@ -1,0 +1,55 @@
+@media (min-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    header {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px 40px 20px;
+    }
+
+    .review-form {
+        width: 100%;
+        max-width: 650px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    fieldset {
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: none;
+    }
+
+    fieldset label:has(input[type="radio"]),
+    fieldset label:has(input[type="checkbox"]) {
+        transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    fieldset label:has(input[type="radio"]):hover,
+    fieldset label:has(input[type="checkbox"]):hover {
+        background-color: #e0e0e0;
+        transform: translateY(-2px);
+    }
+
+    input[type="submit"] {
+        width: auto;
+        display: block;
+        padding: 12px 40px;
+        margin: 30px 0 0 auto;
+    }
+
+    footer {
+        padding: 1.5rem;
+        width: 100%;
+    }
+}
