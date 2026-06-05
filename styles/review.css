@@ -1,0 +1,58 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 60vh;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.confirmation-card {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.confirmation-card h2 {
+    color: #2b7a78;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.counter-display {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #f0f7f4;
+    border-left: 5px solid #2b7a78;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+#reviewCounter {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #111;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #17252a;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-back:hover {
+    background-color: #2b7a78;
+    transform: translateY(-2px);
+}
