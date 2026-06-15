@@ -297,6 +297,17 @@ a {
     font-weight: 700;
 }
 
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+}
+
 /* ── UTILITY ───────────────────────────────────────── */
 .hidden {
     display: none;

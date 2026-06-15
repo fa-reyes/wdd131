@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | The BoardingVerse</title>
+    <meta name="author" content="Fabian Reyes">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/contact-large.css">
+    <script src="scripts/contact.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-brand">
+            <img src="images/boardverseicon.webp" alt="The BoardVerse icon" width="96">
+            <span id="title-page">The Boardverse</span>
+        </div>
+        
+        <button type="button" id="menu" aria-label="main menu navigation">☰</button>
+        
+        <nav class="header-nav">
+            <ul>
+                <li><a href="boardverse.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-header">
+            <h1>Suggest a Game</h1>
+            <p>Know a great board game that's not in our catalog? Let us know!</p>
+        </div>
+
+        <section class="contact-section">
+            <form id="suggestion-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-group">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Recommendations</legend>
+                    <div class="form-group">
+                        <label for="game-name">Game or Category to Suggest</label>
+                        <input type="text" id="game-name" name="game-name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reason">Why do you recommend it? <span class="required">*</span></label>
+                        <textarea name="reason" id="reason" rows="4" placeholder="Tell us why this game would be a great addition..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Additional comments <span class="optional">(optional)</span></label>
+                        <textarea name="comments" id="comments" rows="3"></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Send Suggestion</button>
+            </form>
+
+            <div id="success-message" class="hidden">
+                <h2>Thank you! 🎲</h2>
+                <p>Your suggestion has been received. We'll review it and consider adding it to The BoardVerse!</p>
+                <a href="catalog.html" class="catalog-btn">Browse the Catalog</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> The BoardVerse 🌵 Fabian Reyes 🌵 Chile</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
