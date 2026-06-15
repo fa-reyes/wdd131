@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The BoardVerse Catalog</title>
+    <meta name="author" content="Fabian Reyes">
+    <meta name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/catalog.css">
+    <script src="scripts/catalog.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-brand">
+            <img src="images/boardverseicon.webp" alt="The BoardVerse icon" width="96">
+            <span id="title-page">The Boardverse</span>
+        </div>
+    
+        <button type="button" id="menu" aria-label="main menu navigation"></button>
+    
+        <nav class="header-nav">
+            <ul>
+                <li><a href="boardverse.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="catalog-header">
+            <img src="images/catalog-hero-edited.webp" alt="Different types of board games">
+            <h1 class="catalog-title">Board Games Catalog</h1>
+        </div>
+
+        <section class="catalog-categories">
+            <h2>Meet the BoardVerse:</h2>
+            <button type="button" id="filter-btn">Filter ▼</button>
+            
+            <div id="filter-list" class="hidden">
+                <button class="filter-option active" data-filter="all">All</button>
+                <button class="filter-option" data-filter="strategy">Strategy</button>
+                <button class="filter-option" data-filter="party">Party</button>
+                <button class="filter-option" data-filter="trivia">Trivia</button>
+                <button class="filter-option" data-filter="family">Family</button>
+                <button class="filter-option" data-filter="cards">Cards</button>
+                <button class="filter-option" data-filter="rpg">RPG</button>
+                <button class="filter-option" data-filter="solo">Solo</button>
+            </div>
+
+            <div id="catalog-grid"></div>
+        </section>
+    </main>
+    
+</body>
+</html>
