@@ -1,0 +1,44 @@
+@media (min-width: 1025px) {
+    #menu {
+        display: none;
+    }
+
+    .header-nav {
+        display: block !important;
+        position: static;
+        background: none;
+        padding: 0;
+        border: none;
+    }
+
+    .header-nav ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .header-nav a {
+        font-size: 0.95rem;
+        padding: 0;
+    }
+
+    .catalog-header img {
+        height: 400px;
+    }
+
+    .catalog-title {
+        font-size: 2.8rem;
+        left: 4rem;
+    }
+
+    .catalog-categories {
+        padding: 2rem 4rem;
+    }
+
+    #catalog-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .game-card img {
+        height: 180px;
+    }
+}

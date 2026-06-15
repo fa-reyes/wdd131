@@ -1,3 +1,7 @@
+document.getElementById("menu").addEventListener("click", () => {
+    document.querySelector(".header-nav").classList.toggle("open");
+});
+
 const GAMES_PER_PAGE = 12;
 let currentFilter = "all";
 let currentPage = 1;
